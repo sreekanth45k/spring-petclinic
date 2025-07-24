@@ -32,5 +32,5 @@ jobs:
       - name: Run Snyk test
         run: snyk test --all-projects
 
-      - name: Monitor project (optional)
-        run: snyk monitor --all-projects
+      - name: Run Snyk test (non-blocking)
+        run: snyk test --all-projects || true
